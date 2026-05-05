@@ -709,6 +709,8 @@ function RoundInfoSection({
         <label className="block text-xs font-medium mb-1">สถานที่ (ร้าน)</label>
         <RestaurantPicker
           initialName={round.location ?? ""}
+          initialLat={round.location_lat}
+          initialLng={round.location_lng}
           onChange={setPlace}
         />
         {place.address && (
